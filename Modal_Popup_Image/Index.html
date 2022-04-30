@@ -107,45 +107,16 @@ const img=Array(8);
 for(var i=0;i<8;i++){
 
  img[i]=document.getElementById("img"+i);
+  img[i].onclick = function(){
+  modal.style.display = "block";
+  ModalImg.src=this.src;
+}
  
 }
  
   
 
-img[0].onclick = function(){
-  modal.style.display = "block";
-  ModalImg.src=img[0].src;
-}
-img[1].onclick = function(){
-  modal.style.display = "block";
-  
-  ModalImg.src=img[1].src;
-  
-}
-img[2].onclick = function(){
-  modal.style.display = "block";
-  ModalImg.src=img[2].src;
-}
-img[3].onclick = function(){
-  modal.style.display = "block";
-  ModalImg.src=img[3].src;
-}
-img[4].onclick = function(){
-  modal.style.display = "block";
-  ModalImg.src=img[4].src;
-}
-img[5].onclick = function(){
-  modal.style.display = "block";
-  ModalImg.src=img[5].src;
-}
-img[6].onclick = function(){
-  modal.style.display = "block";
-  ModalImg.src=img[6].src;
-}
-img[7].onclick = function(){
-  modal.style.display = "block";
-  ModalImg.src=img[7].src;
-}
+
    
 
 var span=document.getElementsByClassName("close")[0];
